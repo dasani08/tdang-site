@@ -3,6 +3,7 @@
 import React from 'react';
 
 import Header from '@/components/header';
+import Footer from '@/components/footer';
 import DuongtangModal from './_components/duongtang';
 import NetwilaModal from './_components/netwila';
 import NupixModal from './_components/nupix';
@@ -69,6 +70,7 @@ export default function Mywork() {
         </div>
         {renderProjectModal()}
       </div>
+      <Footer />
     </main>
   );
 }
