@@ -36,7 +36,7 @@ export default function Mywork() {
       <div
         className={`relative flex flex-col items-center container mx-auto max-w-5xl`}
       >
-        <Header currentPage="mywork" />
+        <Header currentPage="work" />
         <div className={`mt-4 -mb-3 container mx-auto max-w-5xl`}>
           <div className="relative rounded-xl overflow-auto p-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

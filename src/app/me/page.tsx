@@ -14,7 +14,7 @@ export default function Mywork() {
       <div
         className={`relative flex flex-col items-center container mx-auto max-w-5xl`}
       >
-        <Header currentPage="aboutme" />
+        <Header currentPage="me" />
         <div
           className={`font-['Roboto_Light'] mt-4 -mb-3 container mx-auto max-w-5xl`}
         >

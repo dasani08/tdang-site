@@ -16,21 +16,7 @@ export default function NetwilaModal({ onClose }: any) {
             <div className="bg-white px-4 pb-4 pt-5 p-6 pb-4">
               <div className="absolute top-0 right-0 pt-4 pr-4">
                 <button onClick={onClose}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                    className="size-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M6 18L18 6M6 6l12 12"
-                    ></path>
-                  </svg>
+                  <Image src="/icons/x.svg" alt="" width={24} height={24} />
                 </button>
               </div>
               <div className="sm:flex sm:items-start">
@@ -52,6 +38,21 @@ export default function NetwilaModal({ onClose }: any) {
                       </span>
                       <span className="font-['Roboto_Light'] text-sm inline-block mx-1 px-4 bg-sky-400 text-neutral-50 rounded">
                         Nest.js
+                      </span>
+                      <span className="font-['Roboto_Light'] text-sm inline-block mx-1 px-4 bg-sky-400 text-neutral-50 rounded">
+                        Next.js
+                      </span>
+                      <span className="font-['Roboto_Light'] text-sm inline-block mx-1 px-4 bg-sky-400 text-neutral-50 rounded">
+                        AWS
+                      </span>
+                      <span className="font-['Roboto_Light'] text-sm inline-block mx-1 px-4 bg-sky-400 text-neutral-50 rounded">
+                        Docker
+                      </span>
+                      <span className="font-['Roboto_Light'] text-sm inline-block mx-1 px-4 bg-sky-400 text-neutral-50 rounded">
+                        Microshift
+                      </span>
+                      <span className="font-['Roboto_Light'] text-sm inline-block mx-1 px-4 bg-sky-400 text-neutral-50 rounded">
+                        MongoDB
                       </span>
                     </p>
                   </div>
