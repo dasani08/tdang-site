@@ -7,13 +7,15 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+    fontFamily: {
+      'sans': ['Roboto', '"Roboto Thin"', '"Roboto Light"']
     },
+    extend: {
+      boxShadow: {
+        'btn': '0px -1px 1px 0px #4D4D4D, 0px 1px 1px 0px #4D4D4D, -1px 0px 1px 0px rgba(0, 0, 0, 0.25), 1px 0px 1px 0px rgba(0, 0, 0, 0.25);',
+        'chip': '0px 0px 1px 0px rgba(0, 0, 0, 0.45);'
+      }
+    }
   },
   plugins: [],
 };
