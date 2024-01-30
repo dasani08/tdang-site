@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={roboto.variable}>
-      <body className="relative font-sans">
+      <body className="relative font-sans text-slate-700">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

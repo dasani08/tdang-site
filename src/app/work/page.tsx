@@ -48,6 +48,14 @@ export default function Mywork() {
               Adkit - Admin Template
             </div>
           </div>
+          <div
+            className="relative group/item flex rounded-lg bg-white shadow-lg px-28 py-28 items-center justify-center bg-[url('/images/mama4mama.png')] bg-no-repeat bg-auto bg-center transform transition hover:scale-[1.01]"
+            onClick={() => selectProjectHandle('mama')}
+          >
+            <div className="flex rounded-b-lg bg-neutral-500/70 pl-4 font-light text-xl font-bold text-neutral-50 absolute left-0 bottom-0 w-full h-16 items-center invisible group-hover/item:visible">
+              Mama 4 Mama - Marketplace for Mamas
+            </div>
+          </div>
         </div>
       </div>
     </div>

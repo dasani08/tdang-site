@@ -8,7 +8,7 @@ import Header from '@/components/header';
 
 export default function Home() {
   React.useEffect(() => {
-    redirect('/work');
+    redirect('/me');
   }, []);
 
   return (

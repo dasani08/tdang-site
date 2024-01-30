@@ -4,7 +4,6 @@ import React from 'react';
 import Image from 'next/image';
 
 import Header from '@/components/header';
-import Footer from '@/components/footer';
 
 export default function Mywork() {
   return (
@@ -12,17 +11,17 @@ export default function Mywork() {
       <Header title="Hi!, my name is Thanh, and I am a full-stack developer" />
       <div className={`relative rounded-xl overflow-auto p-8`}>
         <h3 className="text-2xl">More about me</h3>
-        <p className="text-lg mt-2 text-neutral-700">
+        <p className="text-lg mt-2">
           I love learning new web technologies and then making products more
           useful, usable which help people do a better job.
         </p>
-        <p className="text-lg mt-1 text-neutral-700">
+        <p className="text-lg mt-1">
           Currently working remotely as Full Stack Developer at Netwila
           Application Corps, focused on designing, developing & maintaining a
           logistics system.
         </p>
         <div className="rounded-2xl overflow-hidden w-full p-5 mt-8 bg-white">
-          <h3 className="text-xl text-neutral-700">Interests</h3>
+          <h3 className="text-xl">Interests</h3>
           <ul className="flex flex-wrap mt-4">
             <li className="inline-flex shadow-chip p-1 text-sm inline-block mx-1 px-4 mt-1 bg-neutral-200 text-neutral-800 rounded-2xl">
               <Image
@@ -145,7 +144,7 @@ export default function Mywork() {
 
         <div className="rounded-2xl overflow-hidden w-full p-5 mt-8 bg-white">
           <h3 className="text-xl text-neutral-700">Soft skills</h3>
-          <ul className="flex mt-4 space-x-4">
+          <ul className="flex mt-4 space-x-4 flex-wrap">
             <li>
               <div className="shadow-chip flex items-center justify-center size-12 rounded-full bg-neutral-200 mx-auto">
                 <Image
@@ -213,6 +212,42 @@ export default function Mywork() {
               <div className="mt-1 text-center w-28">Openness to Feedback</div>
             </li>
           </ul>
+        </div>
+
+        <div className="rounded-2xl overflow-hidden w-full p-5 mt-8 bg-white">
+          <h3 className="text-xl text-neutral-700">Contact Me</h3>
+          <div className="flex mt-8 flex-wrap gap-8">
+            <div className="inline-flex">
+              <a href="https://github.com/dasani08">
+                <Image
+                  src="/icons/github.svg"
+                  alt="Picture of the author"
+                  width={48}
+                  height={48}
+                />
+              </a>
+            </div>
+            <div className="inline-flex">
+              <a href="https://www.linkedin.com/in/thanh-dc/">
+                <Image
+                  src="/images/LinkedIn_icon.svg"
+                  alt="Picture of the author"
+                  width={48}
+                  height={48}
+                />
+              </a>
+            </div>
+            <div className="inline-flex rounded-full size-12 items-center justify-center bg-slate-100">
+              <a href="mailto:thanh@clgt.vn">
+                <Image
+                  src="/icons/mail.svg"
+                  alt="Picture of the author"
+                  width={24}
+                  height={24}
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
