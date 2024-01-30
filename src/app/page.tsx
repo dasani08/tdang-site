@@ -1,10 +1,16 @@
 'use client';
 
 import React from 'react';
+import { redirect } from 'next/navigation';
+
 import Sidebar from '@/components/sidebar';
 import Header from '@/components/header';
 
 export default function Home() {
+  React.useEffect(() => {
+    redirect('/work');
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen text-base font-sans">
       <div className="mx-auto w-full">

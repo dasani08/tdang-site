@@ -7,7 +7,7 @@ export default function Header({ title }: { title: string }) {
 
   return (
     <div className="flex md:px-8 sm:px-8 px-4 py-8 text-2xl font-light border-b border-slate-200 items-center justify-between">
-      <span>{title}</span>
+      <span className="text-slate-700">{title}</span>
       <div className="md:hidden">
         <button
           className="flex shadow-md shadow-slate-300 items-center justify-center p-4 bg-sky-300 rounded-lg text-slate-50 fill-current"
