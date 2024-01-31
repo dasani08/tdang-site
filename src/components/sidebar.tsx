@@ -99,12 +99,28 @@ export default function Sidebar() {
                 POSTS
               </a>
             </li>
+            <li
+              className={`py-1 rounded-2xl ${
+                pathname === '/photo'
+                  ? 'bg-slate-500 text-slate-50'
+                  : 'text-slate-900'
+              } hover:bg-slate-400 hover:text-slate-50`}
+            >
+              <a
+                className="inline-flex justify-center w-full hover:underline"
+                href="/photo"
+              >
+                PHOTOGRAPHY
+              </a>
+            </li>
           </ul>
         </div>
       </div>
       <div className="text-center mx-auto inline-block">
-        <p className="font-['Roboto_Light'] text-sm">Made with love</p>
-        <p className="font-['Roboto_Light'] text-sm">
+        <p className="font-light text-sm">
+          Made with <span>❤️</span>
+        </p>
+        <p className="font-light text-sm">
           Hosted on{' '}
           <a
             className="text-sky-600"
@@ -117,7 +133,7 @@ export default function Sidebar() {
             Netlify
           </a>
         </p>
-        <p className="font-['Roboto_Light'] text-sm">© 2024 - Thanh Dang</p>
+        <p className="font-light text-sm">© 2024 - Thanh Dang</p>
       </div>
     </aside>
   );

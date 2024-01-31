@@ -35,6 +35,16 @@ export default function Mywork() {
             </li>
             <li className="inline-flex shadow-chip p-1 text-sm inline-block mx-1 px-4 mt-1 bg-neutral-200 text-neutral-800 rounded-2xl">
               <Image
+                src={'/icons/photo_camera.svg'}
+                width={16}
+                height={16}
+                alt="Picture of the author"
+                className="mr-2"
+              />
+              <span>Photography</span>
+            </li>
+            <li className="inline-flex shadow-chip p-1 text-sm inline-block mx-1 px-4 mt-1 bg-neutral-200 text-neutral-800 rounded-2xl">
+              <Image
                 src={'/icons/react.svg'}
                 width={16}
                 height={16}
@@ -215,7 +225,7 @@ export default function Mywork() {
         </div>
 
         <div className="rounded-2xl overflow-hidden w-full p-5 mt-8 bg-white">
-          <h3 className="text-xl text-neutral-700">Contact Me</h3>
+          <h3 className="text-xl text-neutral-700">Contact me</h3>
           <div className="flex mt-8 flex-wrap gap-8">
             <div className="inline-flex">
               <a href="https://github.com/dasani08">
