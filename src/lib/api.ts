@@ -34,6 +34,12 @@ const POST_GRAPHQL_FIELDS = `
 `;
 
 async function fetchGraphQL(query: string, preview = false): Promise<any> {
+  const cacheSetting: Partial<RequestInit> =
+    process.env['NODE_ENV'] !== 'production'
+      ? {
+          cache: 'no-store',
+        }
+      : { next: { tags: ['posts'], revalidate: 3600 } };
   return fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
     {
@@ -47,8 +53,7 @@ async function fetchGraphQL(query: string, preview = false): Promise<any> {
         }`,
       },
       body: JSON.stringify({ query }),
-      // next: { tags: ['posts'] },
-      cache: 'no-store',
+      ...cacheSetting,
     },
   ).then((response) => response.json());
 }
