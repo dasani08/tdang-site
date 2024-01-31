@@ -1,15 +1,24 @@
-import { getPost } from '@/lib/api';
+import type { Metadata } from 'next';
 
 import Header from '@/components/header';
 import { Markdown } from '@/lib/markdown';
 import CoverImage from '@/components/cover-image';
 import Date from '@/components/date';
+import { getPost } from '@/lib/api';
 
-export default async function PostPage({
-  params,
-}: {
+type Props = {
   params: { slug: string };
-}) {
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const post = await getPost(params.slug, false);
+
+  return {
+    title: post!.title,
+  };
+}
+
+export default async function PostPage({ params }: Props) {
   const post = await getPost(params.slug, false);
 
   return (
