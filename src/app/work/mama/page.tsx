@@ -5,9 +5,9 @@ import Header from '@/components/header';
 
 export default function DuongtangPage() {
   return (
-    <div className={`relative bg-slate-50 h-full max-w-screen-lg`}>
+    <div className={`relative bg-slate-50 h-full`}>
       <Header title="MAMA - Marketplace for Mamas" />
-      <div className="relative rounded-xl overflow-auto p-8">
+      <div className="relative rounded-xl overflow-auto p-8 max-w-screen-lg">
         <div className="mt-2">
           <p className="text-lg">Role: UI/UX Designer</p>
           <p className="text-lg">

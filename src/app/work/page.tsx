@@ -14,7 +14,7 @@ export default function Mywork() {
   return (
     <div className={`relative bg-slate-50 h-full`}>
       <Header title="MY WORKS" />
-      <div className="relative rounded-xl overflow-auto p-8">
+      <div className="relative rounded-xl overflow-auto p-8 max-w-screen-lg">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div
             className="relative group/item flex rounded-lg bg-white shadow-lg px-28 py-28 items-center justify-center bg-[url('/images/Freight.png')] bg-no-repeat bg-auto bg-center transform transition hover:scale-[1.01]"

@@ -6,7 +6,7 @@ export default function NetwilaPage() {
   return (
     <div className={`relative bg-slate-50 h-full`}>
       <Header title="NETWILA APPLICATION" />
-      <div className="relative rounded-xl overflow-auto p-8">
+      <div className="relative rounded-xl overflow-auto p-8 max-w-screen-lg">
         <div className="mt-2">
           <p className="text-lg text-neutral-700">Role: Full Stack Developer</p>
           <p className="text-lg text-neutral-700">
