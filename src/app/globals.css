@@ -31,35 +31,3 @@ body {
     text-wrap: balance;
   }
 }
-
-/* @layer base {
-  @font-face {
-    font-family: Roboto;
-    font-weight: normal;
-    src: url(/fonts/roboto/Roboto-Regular.ttf);
-  }
-
-  @font-face {
-    font-family: 'Roboto Bold';
-    font-weight: bold;
-    src: url(/fonts/roboto/Roboto-Bold.ttf);
-  }
-
-  @font-face {
-    font-family: 'Roboto Light';
-    font-weight: lighter;
-    src: url(/fonts/roboto/Roboto-Light.ttf);
-  }
-
-  @font-face {
-    font-family: 'Roboto Thin';
-    font-weight: 100;
-    src: url(/fonts/roboto/Roboto-Thin.ttf);
-  }
-} */
-
-.avatar {
-  /* background-color: #D9D9D9; */
-  /* filter: drop-shadow(-3px 0px 6px rgba(226, 147, 54, 0.50)) drop-shadow(0px 3px 6px rgba(96, 167, 63, 0.50)) drop-shadow(3px 0px 6px rgba(60, 167, 227, 0.50)) drop-shadow(0px -3px 6px rgba(245, 71, 71, 0.50)); */
-  
-}
