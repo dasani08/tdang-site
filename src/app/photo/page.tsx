@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Header from '@/components/header';
+import Image from 'next/image';
 
 export default function PhotoPage() {
   return (
@@ -8,136 +9,174 @@ export default function PhotoPage() {
       <div className="p-8">
         <div className="columns-3xs gap-8 space-y-8">
           <div className="relative aspect-w-1 aspect-h-1">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="https://live.staticflickr.com/65535/53498603327_0db71c339b_k.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-1 aspect-h-1">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="https://live.staticflickr.com/65535/53499792849_b80969109c_k.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/IMG_1780.jpeg"
+              src="https://live.staticflickr.com/65535/53499905715_1e53cbf692_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/IMG_2551.jpeg"
+              src="https://live.staticflickr.com/65535/53499639703_e31517060d_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/IMG_0360.jpeg"
+              src="https://live.staticflickr.com/65535/53499792314_1d1a68aae6_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/IMG_0380.jpeg"
+              src="https://live.staticflickr.com/65535/53499905720_f1c2d96984_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-9 aspect-h-16">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/10226213593_5890e75c8e_o.jpg"
+              src="https://live.staticflickr.com/3715/10226213593_2b53a3c1a0_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-9 aspect-h-16">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/10226143195_ef190c0114_o.jpg"
+              src="https://live.staticflickr.com/5464/10226143195_c79e95cea1_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/11489228193_630a48a886_o.jpg"
+              src="https://live.staticflickr.com/2862/11489228193_458d4c1612_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-1 aspect-h-1">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="/photos/10226089873_3bcac23354_o.jpg"
+              src="https://live.staticflickr.com/7298/10226089873_03c8f06bf3_b.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-1 aspect-h-1">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/9866877354_763114de08_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-9 aspect-h-16">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/8701374316_3c9762e13c_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-1 aspect-h-1">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/8577739738_20c50da7fd_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-9 aspect-h-16">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/9484848253_b0738ed398_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-9 aspect-h-16">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/19203491645_035b054979_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/19047821658_2baac2aca7_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/19441311801_b0bc6debdc_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/19554258041_75013548c7_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
           <div className="relative aspect-w-16 aspect-h-9">
-            <img
+            <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="/photos/23789206350_d404fc0b44_o.jpg"
               alt=""
+              width={500}
+              height={500}
             />
           </div>
         </div>
