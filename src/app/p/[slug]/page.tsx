@@ -24,10 +24,13 @@ export default async function PostPage({ params }: Props) {
   return (
     <div className={`relative bg-slate-50 h-full`}>
       <Header title={post.title} />
-      <div className="relative rounded-xl overflow-auto p-8 max-w-screen-lg">
+      <div className="relative rounded-xl p-8 max-w-screen-lg">
         {post.coverImage && (
           <div className="mb-4 md:mb-8 sm:mx-0">
             <CoverImage title={post.title} url={post.coverImage.url} />
+            <i className="mt-1 text-sm text-slate-300">
+              {post.coverImage.description}
+            </i>
           </div>
         )}
         <div className="prose max-w-none">
