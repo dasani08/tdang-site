@@ -31,7 +31,18 @@ function RichTextAsset({
   const asset = assets?.find((asset) => asset.sys.id === id);
 
   if (asset?.url) {
-    return <Image src={asset.url} layout="fill" alt={asset.description} />;
+    return (
+      <div className="flex flex-col justify-center items-center">
+        <Image
+          src={asset.url}
+          width={500}
+          height={500}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          alt={asset.description}
+        />
+        <i className="mt-1 text-sm text-slate-300">{asset.description}</i>
+      </div>
+    );
   }
 
   return null;
