@@ -1,14 +1,17 @@
-/* eslint-disable @next/next/no-img-element */
 import Header from '@/components/header';
-import Image from 'next/image';
+import { getPhotos } from '@/lib/contentful';
+import AllPhotos from './_components/all-photo';
 
-export default function PhotoPage() {
+export default async function PhotoPage() {
+  const images = await getPhotos();
+
   return (
     <div className={`relative bg-slate-50 h-full`}>
       <Header title="PHOTOGRAPHY" />
       <div className="p-8">
+        <AllPhotos images={images} />
         <div className="columns-3xs gap-8 space-y-8">
-          <div className="relative aspect-w-1 aspect-h-1">
+          {/* <div className="relative aspect-w-1 aspect-h-1">
             <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
               src="https://live.staticflickr.com/65535/53498603327_0db71c339b_k.jpg"
@@ -178,7 +181,7 @@ export default function PhotoPage() {
               width={500}
               height={500}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

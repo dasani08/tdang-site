@@ -7,7 +7,8 @@ import Sidebar from '@/components/sidebar';
 import Header from '@/components/header';
 import Date from '@/components/date';
 
-import { getAllPosts } from '@/lib/api';
+// import { getAllPosts } from '@/lib/api';
+import { getAllPosts } from '@/lib/contentful';
 
 function Article({
   title,
@@ -44,7 +45,7 @@ function Article({
 }
 
 export default async function HomePage() {
-  const allPosts = await getAllPosts(false);
+  const allPosts = await getAllPosts();
 
   return (
     <div className="flex flex-col min-h-screen text-base font-sans">
