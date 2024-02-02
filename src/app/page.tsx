@@ -1,14 +1,12 @@
-// 'use client';
-import Link from 'next/link';
 import React from 'react';
-// import { redirect } from 'next/navigation';
 
 import Sidebar from '@/components/sidebar';
 import Header from '@/components/header';
 import Date from '@/components/date';
 
-// import { getAllPosts } from '@/lib/api';
 import { getAllPosts } from '@/lib/contentful';
+
+export const revalidate = 3600;
 
 function Article({
   title,

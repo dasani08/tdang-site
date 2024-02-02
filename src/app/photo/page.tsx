@@ -2,6 +2,8 @@ import Header from '@/components/header';
 import { getPhotos } from '@/lib/contentful';
 import AllPhotos from './_components/all-photo';
 
+export const revalidate = 3600;
+
 export default async function PhotoPage() {
   const images = await getPhotos();
 
