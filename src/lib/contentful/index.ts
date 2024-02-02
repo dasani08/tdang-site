@@ -111,7 +111,7 @@ export async function getPhotos(): Promise<any> {
   const result = await contentfulFetch({
     query: `
       query {
-        photoCollection(where: {}, order: date_DESC) {
+        photoCollection(where: {}, order: sys_publishedAt_DESC) {
           items {
             ${PHOTO_GRAPHQL_FIELDS}
           }
