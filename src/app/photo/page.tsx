@@ -12,23 +12,6 @@ export default async function PhotoPage() {
         <AllPhotos images={images} />
         <div className="columns-3xs gap-8 space-y-8">
           {/* <div className="relative aspect-w-1 aspect-h-1">
-            <Image
-              className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="https://live.staticflickr.com/65535/53498603327_0db71c339b_k.jpg"
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="relative aspect-w-1 aspect-h-1">
-            <Image
-              className="w-full object-cover rounded-lg grayscale hover:grayscale-0"
-              src="https://live.staticflickr.com/65535/53499792849_b80969109c_k.jpg"
-              alt=""
-              width={500}
-              height={500}
-            />
-          </div>
           <div className="relative aspect-w-16 aspect-h-9">
             <Image
               className="w-full object-cover rounded-lg grayscale hover:grayscale-0"

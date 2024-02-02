@@ -13,7 +13,11 @@ type ContentfulReponse<T> = {
   };
 };
 
-function extractOne<T>(res: ContentfulReponse<T>, collection: string): T {
+function extractOne<T>(
+  res: ContentfulReponse<T>,
+  collection: string,
+): T | null {
+  if (!res.body) return null;
   return res.body[collection].items.map((item) => ({
     id: item.sys.id,
     ...item,
@@ -21,6 +25,7 @@ function extractOne<T>(res: ContentfulReponse<T>, collection: string): T {
 }
 
 function extractMany<T>(res: ContentfulReponse<T>, collection: string): T[] {
+  if (!res.body) return [];
   return res.body[collection].items.map((item) => ({
     id: item.sys.id,
     ...item,
