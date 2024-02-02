@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 
 import Header from '@/components/header';
 import { Markdown } from '@/lib/markdown';
@@ -13,13 +14,23 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = await getPost(params.slug, false);
 
+  if (!post) return notFound();
+
   return {
-    title: post!.title,
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      publishedTime: post.date,
+      modifiedTime: post.date,
+      type: 'article',
+    },
   };
 }
 
 export default async function PostPage({ params }: Props) {
   const post = await getPost(params.slug, false);
+
+  if (!post) return notFound();
 
   return (
     <div className={`relative bg-slate-50 h-full`}>
