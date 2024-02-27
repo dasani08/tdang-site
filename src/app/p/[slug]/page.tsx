@@ -6,6 +6,7 @@ import { Markdown } from '@/lib/markdown';
 import CoverImage from '@/components/cover-image';
 import Date from '@/components/date';
 import { getPost } from '@/lib/api';
+import Commment from '@/components/comment';
 
 type Props = {
   params: { slug: string };
@@ -50,6 +51,7 @@ export default async function PostPage({ params }: Props) {
         <p className="mt-8 text-sm text-slate-400">
           Posted: <Date dateString={post.date} />
         </p>
+        <Commment />
       </div>
     </div>
   );

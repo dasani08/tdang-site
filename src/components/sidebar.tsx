@@ -39,7 +39,7 @@ export default function Sidebar() {
               />
               <a
                 className="text-sm hover:underline inline-block"
-                href="https://github.com/dasani08"
+                href="https://github.com/haku-d"
               >
                 dasani08
               </a>
