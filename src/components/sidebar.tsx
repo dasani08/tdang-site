@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
@@ -37,12 +38,12 @@ export default function Sidebar() {
                 width={16}
                 height={16}
               />
-              <a
+              <Link
                 className="text-sm hover:underline inline-block"
                 href="https://github.com/haku-d"
               >
                 dasani08
-              </a>
+              </Link>
             </div>
             <div className="inline-flex items-center justify-center space-x-2 mx-2">
               <Image
@@ -51,12 +52,12 @@ export default function Sidebar() {
                 width={16}
                 height={16}
               />
-              <a
+              <Link
                 className="text-sm hover:underline inline-block"
                 href="https://www.linkedin.com/in/thanh-dc/"
               >
                 Thanh Dang
-              </a>
+              </Link>
             </div>
           </div>
           <ul className="mt-8 space-y-2">
@@ -67,9 +68,9 @@ export default function Sidebar() {
                   : 'text-slate-900'
               } hover:bg-slate-400 hover:text-slate-50`}
             >
-              <a className="inline-flex justify-center w-full" href="/work">
+              <Link className="inline-flex justify-center w-full" href="/work">
                 PROJECTS
-              </a>
+              </Link>
             </li>
             <li
               className={`py-1 rounded-2xl ${
@@ -78,12 +79,12 @@ export default function Sidebar() {
                   : 'text-slate-900'
               } hover:bg-slate-400 hover:text-slate-50`}
             >
-              <a
+              <Link
                 className="inline-flex justify-center w-full hover:underline"
                 href="/me"
               >
                 ABOUT
-              </a>
+              </Link>
             </li>
             <li
               className={`py-1 rounded-2xl ${
@@ -92,12 +93,12 @@ export default function Sidebar() {
                   : 'text-slate-900'
               } hover:bg-slate-400 hover:text-slate-50`}
             >
-              <a
+              <Link
                 className="inline-flex justify-center w-full hover:underline"
                 href="/"
               >
                 POSTS
-              </a>
+              </Link>
             </li>
             <li
               className={`py-1 rounded-2xl ${
@@ -106,12 +107,12 @@ export default function Sidebar() {
                   : 'text-slate-900'
               } hover:bg-slate-400 hover:text-slate-50`}
             >
-              <a
+              <Link
                 className="inline-flex justify-center w-full hover:underline"
                 href="/photo"
               >
                 PHOTOGRAPHY
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
