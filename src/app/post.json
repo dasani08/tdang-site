@@ -1,5 +1,21 @@
 [
   {
+    "title": "Generate pdf with Serverless API",
+    "slug": "generate-pdf-with-serverless-api",
+    "date": "2024-03-08",
+    "tags": [
+      {
+        "name": "AWS"
+      },
+      {
+        "name": "Coding"
+      },
+      {
+        "name": "Puppeteer"
+      }
+    ]
+  },
+  {
     "title": "Being a UX designer",
     "slug": "being-a-ux-designer",
     "date": "2024-02-01",
