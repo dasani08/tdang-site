@@ -1,9 +1,30 @@
 'use client';
 import Script from 'next/script';
+import { useId, Fragment, useEffect } from 'react';
 
-export default function Commment() {
+declare global {
+  interface Window {
+    DISQUS: any;
+  }
+}
+
+export default function Commment({ id }: { id: string }) {
+  const DISQUS_SCRIPT_ID = 'disqus_thread_script';
+
+  useEffect(() => {
+    const sd = document.getElementById(DISQUS_SCRIPT_ID);
+    if (sd) {
+      window.DISQUS?.reset({
+        reload: true,
+        config: function () {
+          this.page.identifier = id;
+        },
+      });
+    }
+  }, [id]);
+
   return (
-    <>
+    <Fragment key={useId()}>
       <div id="disqus_thread"></div>
       <Script id="disqus_thread_script">
         {`
@@ -15,6 +36,6 @@ export default function Commment() {
             })();
         `}
       </Script>
-    </>
+    </Fragment>
   );
 }

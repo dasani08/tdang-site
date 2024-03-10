@@ -5,7 +5,24 @@ import Date from '@/components/date';
 
 export const metadata = {
   title: 'Being a UX designer',
+  description: 'Being a UX designer',
+  openGraph: {
+    title: 'Being a UX designer',
+    description: 'Being a UX designer'
+  }
 };
+
+export const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Post',
+  name: metadata.title,
+  description: metadata.description,
+}
+
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+/>
 
 <Header title="Being a UX designer" mdx={true} />
 
@@ -103,4 +120,4 @@ Thanks for your reading
 
 Posted: <Date dateString={'2024-01-01'} />
 
-<Commment />
+<Commment id="being-a-ux-designer"/>

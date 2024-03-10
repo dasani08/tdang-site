@@ -15,6 +15,8 @@ const roboto = Roboto({
 });
 
 const SITE_NAME = process.env['SITE_NAME'] ?? 'Thanh Dang';
+const DESC =
+  'Full Stack Developer | React/Nest.Js/Next.js/Flask/Node.js/Javascript/Typescript/PHP/AWS';
 const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
   ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
   : 'http://localhost:3000';
@@ -25,12 +27,18 @@ export const metadata: Metadata = {
     default: SITE_NAME,
     template: `%s | ${SITE_NAME}`,
   },
+  openGraph: {
+    title: {
+      default: SITE_NAME,
+      template: `%s | ${SITE_NAME}`,
+    },
+    description: DESC,
+  },
   robots: {
     follow: true,
     index: true,
   },
-  description:
-    'Full Stack Developer | React/Nest.Js/Next.js/Flask/Node.js/Javascript/Typescript/PHP/AWS',
+  description: DESC,
 };
 
 export default function RootLayout({
