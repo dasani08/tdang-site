@@ -51,7 +51,7 @@ export default async function PostPage({ params }: Props) {
         <p className="mt-8 text-sm text-slate-400">
           Posted: <Date dateString={post.date} />
         </p>
-        <Commment />
+        <Commment id={params.slug} />
       </div>
     </div>
   );
