@@ -1,5 +1,18 @@
 [
   {
+    "title": "Unlock Tailwind UI Components",
+    "slug": "unlock-tailwind-components",
+    "date": "2024-03-12",
+    "tags": [
+      {
+        "name": "React"
+      },
+      {
+        "name": "TailwindCSS"
+      }
+    ]
+  },
+  {
     "title": "Generate pdf with Serverless API",
     "slug": "generate-pdf-with-serverless-api",
     "date": "2024-03-08",
