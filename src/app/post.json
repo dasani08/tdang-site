@@ -1,5 +1,21 @@
 [
   {
+    "title": "How to Build and Run an Angular Application on NGINX Using Docker",
+    "slug": "build-and-run-angular-on-nginx-using-docker",
+    "date": "2024-08-08",
+    "tags": [
+      {
+        "name": "Angular"
+      },
+      {
+        "name": "Nginx"
+      },
+      {
+        "name": "Docker"
+      }
+    ]
+  },
+  {
     "title": "Unlock Tailwind UI Components",
     "slug": "unlock-tailwind-components",
     "date": "2024-03-12",
