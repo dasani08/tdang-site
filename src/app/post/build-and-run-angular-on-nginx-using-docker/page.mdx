@@ -91,7 +91,9 @@ server {
 }
 ```
 
-At line `85`, the nginx server will return the application's host page (index.html) when asked for a file that it does not have. All routes must fall back to index.html
+You might be found same guideline on the internet or from ChatGPT but it did not tell you to create custom nginx configuration. Let's take a look at this case: once your application was deployed successfully and running on port 4200. You open it on your favourite browser, click on any router link to access other pages, such as /profile. The full url will be `http://localhost:4200/profile`. 
+
+If you used default nginx configuration for your application and you refresh the browser while opening `http://localhost:4200/profile`, nginx will show 404 page. But with this configuration, the nginx server will return the application's host page (index.html) when asked for a file that it does not have. All routes must fall back to index.html
 
 ## Step 4: Build the Docker Image
 
